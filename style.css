@@ -1,67 +1,65 @@
 body{
-    margin: 0;
-    padding: 0;
-}
-.life-container{
-    position: fixed;
-    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    background-color: #2C3E50;
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.button-1{
-    width: 50%;
-    background-color: white;
-    border-radius: 12px;
-    margin-bottom: 12px;
-    font-size: 1,1rem;
-    font-weight: bold;
-    padding: 10px;
-    
-}
-.photo-contect{
-    position: absolute;
-    top: 100px;
-    text-align:center;
 
-.button-1:hover {
-    background-color: black;
+.kalkulator{
+    width: 250px;
+    background-color: #ffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px(rgb(0, 0, 0.1));
+    padding: 20px;
+}
+
+#display{
+    width: 230px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.button{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.btn{
+    padding: 15px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.btn:active{
+    background-color: #ddd;
+}
+
+.oprator{
+    background-color: greenyellow;
+}
+
+.oprator:active{
+    background-color: rgb(53, 53, 119);
+}
+
+.clear{
+    grid-column: span 4;
+    background-color: rgb(44, 110, 123) ;
     color: white;
-    transition: 1s;
+    width: 100%;
 }
-}
-.foto{
-    width: 50%;
-    border-radius:50%;
-}
-.right-container{
-    position: absolute;
-    left: 400px;
-}
-.top-bar{
-    padding-top: 50px;
-    padding-left: 100px;
-}
-.list-menu{
-    float: right;
-    padding-right: 50px;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-.menu{
-    font-size: 1.1rem;
-    padding: 0 15px;
-}
-#bio{
-    padding-top: 100px;
-    padding-left: 100px;
-}
-#skill{
-    padding-top: 100px;
-    padding-left: 100px;
-}
-#portfolio{
-    padding-top: 100px;
-    padding-left: 100px;
+
+.clear:active{
+    background-color: rgb(53, 53, 117);
 }
